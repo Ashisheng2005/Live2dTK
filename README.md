@@ -4,6 +4,14 @@ Live2d performance on tkinter based on live2d_py
 
 
 
+使用前需要安装第三方库及其他附加库：
+
+```ini
+pip install Live2dTK
+```
+
+示例：
+
 ```python
 from tkinter import Tk, Frame
 from Live2dTK import Live2dFrame
