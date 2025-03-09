@@ -49,11 +49,11 @@ def touch(self):"""被点击事件"""
 
 该模块主要集成的live2d功能来自[live2d-py](https://github.com/Arkueid/live2d-py) 可以根据改项目的其他方法改写以实现更多的可玩性，当前模块后续也会封装更多的api。
 
-另附上一个Demo：[demo](https://github.com/Ashisheng2005/Live2dTK/Demo/demo.py)
+另附上一个Demo：[demo](https://github.com/Ashisheng2005/Live2dTK/blob/main/Demo/demo.py)
 
 效果如下：
 
-![](https://github.com/Ashisheng2005/Live2dTK/Demo/demogif-1.gif)
+![](https://github.com/Ashisheng2005/Live2dTK/blob/main/Demo/demogif-1.gif)
 
 
 
