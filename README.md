@@ -1,6 +1,6 @@
 # Live2dTK
 
-Live2d performance on tkinter based on live2d_py
+Live2d performance on tkinter based on [live2d-py](https://github.com/Arkueid/live2d-py) 
 
 
 
@@ -59,10 +59,38 @@ def touch(self):"""被点击事件"""
 
 另附上一个Demo：[demo](https://github.com/Ashisheng2005/Live2dTK/blob/main/Demo/demo.py)
 
-效果如下：
-
-![](https://github.com/Ashisheng2005/Live2dTK/blob/main/Demo/demogif-1.gif)
 
 
+**加油啊，做黄油的大哥哥！**
 
-加油啊，做黄油的大哥哥！
+
+
+# 1.0.1更新内容
+
+添加版本选择，初始化时可以根据模型版本选择2/3版本,默认为3
+
+```python
+Live2dFrame(master, model_versions=3, model_path=r"...", width=1000, height=1000)
+```
+
+
+
+添加帧数控制，当设置帧数大于等于120帧则忽略
+
+```python
+Live2dFrame(master, model_path=r"...", fps=120, width=1000, height=1000)
+```
+
+
+
+模型点击触发动作，前提是模型文件存在动作
+
+```python
+Debugging = Live2dFrame(master, model_path=r"...",fps=120, width=1000, height=1000)
+Debugging.pack()
+Debugging.bind("<Button-1>", lambda _: Debugging.model.StartRandomMotion())	# 左键点击时触发动作
+```
+
+
+
+修复Resources路径处理： RESOURCES_DIRECTORY
